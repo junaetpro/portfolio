@@ -1,0 +1,555 @@
+
+/*=====================================================*/
+/*--------------1500px------------================----*/
+/*======================================================*/
+
+
+@media (max-width: 1500px){
+    :root{
+        --section-padding: 80px 10%;
+    }
+    Header .navber{
+        padding: 5px 10%;
+    }
+    Header .hero{
+        padding: 0 10%;
+    }
+}
+
+/*=====================================================*/
+/*--------------1400px------------================----*/
+/*======================================================*/
+
+@media (max-width: 1400px){
+    :root{
+        --section-padding: 80px 8%;
+    }
+    Header .navber{
+        padding: 5px 8%;
+    }
+    Header .hero{
+        padding: 0 8%;
+    }
+    .about .content .left{
+        flex-basis: 35%;
+    }
+
+    .about .content .left img{
+        width: 90%;
+    }
+
+    .project .content .buttom .left{
+        flex-basis: 20%;
+    }
+    .project .content .buttom .right{
+        flex-basis: 80%;
+    }
+    .project .content .buttom .right .project_box{
+        flex-basis: 21%;
+    }
+
+    .price .content .bottom .price_box{
+        padding: 30px;
+    }
+
+    .contact .content .bottom .left{
+        margin-left: 0;
+    }
+    .contact .content .bottom .right{
+        flex-basis: 55%;
+    }
+}
+/*=====================================================*/
+/*--------------1100px------------================----*/
+/*======================================================*/
+
+
+@media (max-width: 1100px){
+
+    :root{
+        --section-padding: 50px 7%;
+    }
+    Header .navber .logo img{
+        width: 100px;
+    }
+    Header .hero .left span{
+        font-size: 20px;
+    }
+    Header .hero .left h1{
+        font-size: 50px;
+        
+    }
+    Header .hero .left h1 span{
+        font-size: 50px;
+        color: rgb(216, 46, 46);
+        text-shadow: 0px 0px 3px #000;
+    }
+    Header .hero .left h3{
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+
+    .about .content .left{
+        flex-basis: 35%;
+    }
+    .about .content .right {
+        flex-basis: 65%;
+    }
+    .about .content .right::before {
+        top: 0px;
+        right: 0px;
+    }
+    .about .content .right::after{
+        bottom: 0px;
+        left: 0px;
+    }
+    .about .content .right .con{
+        padding: 20px;
+    }
+    .about .content .right .con h2{
+        margin-bottom: 10px;
+    }
+    .about .content .right .con p{
+        margin-bottom: 20px;
+    }
+    .about .content .right .con .social{
+        margin-bottom: 10px;
+    }
+
+    .service .content .bottom{
+        padding: 30px;
+    }
+    .offers .contnt .addition_wrap .swiper-slide{
+        padding: 30px;
+    }
+    .skills .content .bottom .right .glass_box{
+        width: 350px;
+        height: 350px;
+        justify-content: center;
+    align-content: center;
+    }
+    .skills .content .bottom .right .glass_box .sub_box .rotet{
+        width: 120px;
+        height: 120px;
+    }
+    .skills .content .bottom .right .glass_box .sub_box .rotet .fix_round h3{
+        font-size: 20px;
+    }
+    .skills .content .bottom .right .glass_box .sub_box .rotet .fix_round span{
+        font-size: 14px;
+    }
+    .project .content .buttom .left{
+        height: 700px;
+    }
+    .project .content .buttom .right{
+        height: 700px;
+    }
+
+    .project .content .buttom .right .project_box{
+        flex-basis: 30%;
+    }
+    .contact .content .bottom .left{
+        padding: 20px;
+    }
+}
+
+
+/*=====================================================*/
+/*--------------992px------------================----*/
+/*======================================================*/
+
+@media (max-width: 992px){
+    :root{
+        --section-padding: 80px 5%;
+
+        --section-text: 30px;
+        --sub-section-text:18px;
+
+        --paragraph-normal:14px;
+        --paragraph-small:13px;
+    }
+    Header .navber .nev_and_btns{
+        position: fixed;
+        top: 100%;
+        left: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: var(--light_overlay);
+        width: 100%;
+        height: 92vh;
+        padding-bottom: 50px;
+        transition: .4s;
+    }
+    Header .navber .nev_and_btns_come{
+        left: 0;
+    }
+    
+    Header .navber .nev_and_btns .nav_list{
+        width: 100%;
+    }
+    Header .navber .nev_and_btns ul{
+        flex-direction: column;
+    }
+    Header .navber .nev_and_btns ul li a{
+        width: 100%;
+        margin: 0;
+        padding: 20px 20px;
+        display: inline-block;
+        text-align: center;
+        color: var();
+    }
+
+    Header .menu_btn i{
+        font-size: 30px;
+        display: flex;
+    }
+
+
+
+
+}
+
+/*--------------768px------------================----*/
+/*======================================================*/
+
+@media (max-width: 768px){
+    :root{
+        --section-padding: 50px 5%;
+    }
+    Header .hero{
+        flex-direction: column-reverse;
+    }
+    Header .hero .left{
+        flex-basis: 55%;
+        text-align: center;
+        justify-content: start;
+        padding-top: 10px;
+    }
+    Header .hero .left .hello{
+        margin-bottom: 10px;
+    }
+    Header .hero .left h1{
+        line-height: 40px;
+        
+    }
+    Header .hero .left h3{
+        margin: 10px;
+    }
+    
+    Header .hero .left p{
+        margin: 0 auto 15px ;
+    }
+    Header .hero .right{
+        flex-basis: 45%;
+
+
+    }
+    Header .hero .right .img{
+        width: 50%;
+    }
+
+    .about .content{
+        flex-direction: column;
+    }
+    .about .content .left .img{
+        width: 50%;
+    }
+    .about .content .left img{
+        border: 5px solid var(--dark-color);
+        margin-bottom: 10px;
+    }
+    .about .content .right .con{
+        text-align: center;
+    }
+
+    .service .content .top{
+        margin-bottom: 30px;
+    }
+    .service .content .bottom{
+        padding: 20px;
+        gap: 20px;
+    }
+    .service .content .bottom .box{
+        padding: 10px;
+    }
+    .service .content .bottom .box i{
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+    .service .content .bottom .box p{
+        margin-bottom: 10px;
+    }
+
+    .offers .contnt .addition_wrap{
+        padding: 30px;
+    }
+    .skills .content .top{
+        margin-bottom: 30px;
+    }
+    .skills .content .bottom .left{
+        flex-basis: 67%;
+        margin-right: 2%;    
+    }
+    .skills .content .bottom .right{
+        flex-basis: 30%;
+    }
+
+    .skills .content .bottom .right .glass_box{
+        width: 300px;
+        height: 300px;
+    }
+
+    .project .content .top {
+        margin-bottom: 30px;
+
+    }
+    .project .content .buttom .right{
+        gap: 15px;
+    }
+    .project .content .buttom .right .project_box{
+        flex-basis: 40%;
+    }
+    .price .content .top{
+        margin-bottom: 30px;
+    }
+    .price .content .bottom{
+        flex-wrap: wrap;
+    }
+    .price .content .bottom .price_box{
+        flex-basis: 45%;
+        margin-bottom: 20px;
+    }
+    .price .content .bottom .price_box:nth-child(1){
+        height: 500px;
+    }
+    .price .content .bottom .price_box:nth-child(2){
+        height: 500px;
+    }
+    .price .content .bottom .price_box:nth-child(3){
+        height: 500px;
+    }
+
+    .testimonial .content .hero_text{
+        margin-bottom: 30px;
+    }
+    .testimonial .content .cards .card-warp{
+        margin: 0 30px 30px;
+    }
+    .contact .content .bottom{
+        padding:40px 20px;
+    }
+    .contact .content .bottom .left .text{
+        font-size: 12px;
+    }
+    .contact .content .bottom .right form .name_box input::placeholder, .contact .content .bottom .right form .mail_box input::placeholder, .contact .content .bottom .right form .dec_box textarea::placeholder{
+        font-size:var(--paragraph-normal);
+    }
+
+    footer .footer_glass{
+        padding: 30px;
+        flex-wrap: wrap;
+    }
+    footer .footer_glass .col:nth-child(1){
+        flex-basis: 45%;
+    }
+    footer .footer_glass .col:nth-child(2){
+        flex-basis: 45%;
+        padding: 0 ;
+    }
+    footer .footer_glass .col:nth-child(3){
+        flex-basis: 45%;
+        margin-top: 40px;
+        padding: 0;
+    }
+    footer .footer_glass .col:nth-child(4){
+        flex-basis: 45%;
+        margin-top: 40px;
+    }
+
+    footer .footer_glass .col p{
+        width: 100%;
+    }
+
+
+
+}
+
+/*--------------576px------------================----*/
+/*======================================================*/
+@media (max-width: 576px){
+    :root{
+        --section-padding: 50px 5%;
+
+        --section-text: 30px;
+        --sub-section-text:16px;
+
+        --paragraph-normal:14px;
+    }
+    Header .hero{
+        flex-direction: column-reverse;
+    }
+    Header .hero .left{
+        flex-basis: 55%;
+        text-align: center;
+        justify-content: start;
+        padding-top: 10px;
+    }
+    Header .hero .left .hello{
+        margin-bottom: 10px;
+    }
+    Header .hero .left h1{
+        line-height: 40px;
+        
+    }
+    Header .hero .left h3{
+        margin: 10px;
+    }
+    
+    Header .hero .left p{
+        margin: 0 auto 15px ;
+    }
+    Header .hero .right{
+        flex-basis: 45%;
+
+
+
+    }
+    Header .hero .right .img{
+        width: 60%;
+    }
+
+    .about .content{
+        flex-direction: column;
+    }
+    .about .content .left .img{
+        width: 50%;
+    }
+    .about .content .left img{
+        border: 5px solid var(--dark-color);
+        margin-bottom: 10px;
+    }
+    .about .content .right .con{
+        text-align: center;
+    }
+    .service .content .bottom{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .offers .contnt .addition_wrap .swiper-slide .left h2{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .offers .contnt .addition_wrap .swiper-slide .right h1{
+        font-size: 40px; 
+    }
+    .skills .content .bottom{
+        flex-direction: column-reverse;
+        
+    }
+    .skills .content .bottom .left{
+        width: 90%;
+
+    }
+    .skills .content .bottom .right{
+        margin-bottom: 20px;
+    }
+    .project .content .buttom .left{
+        flex-basis: 30%;
+        overflow: hidden;
+    }
+
+    .project .content .buttom .left #project_search{
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .project .content .buttom .right{
+        flex-basis: 70%;
+    }
+    .project .content .buttom .right .project_box{
+        flex-basis: 45%;
+    }
+    .project .content .buttom .right .project_box .text h3{
+        font-size: 12px;
+    }
+    .price .content .bottom .price_box .price_list{
+        margin-bottom: 3px;
+    }
+    .price .content .bottom .price_box{
+        padding:20px;
+    }
+    .price .content .bottom .price_box h3{
+        font-size: 25px;
+    }
+    .gallery .galery_btn{
+        margin-top: 10px; 
+    }
+    .gallery .bottom{
+        margin-top: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    .tabing .content .top{
+        margin-bottom: 30px;
+    }
+    .tabing .content .bottom{
+        padding: 20px;
+    }
+    .tabing .content .bottom .tab_btn{
+        justify-content: space-between;
+        background-color: #000;
+    }
+    .tabing .content .bottom .tab_btn h3{
+        font-size: 16px;
+    }
+
+    .testimonial .content .hero_text{
+        margin-bottom: 30px;
+    }
+
+    .swiper-button-prev::after, .swiper-button-next::after {
+    font-size: 30px; /* Resize default Swiper arrow icons */
+    }
+    .testimonial .content .cards .card{
+        padding: 10px;
+        height: 320px;
+    }
+    .testimonial .content .cards .card img{
+        width: 20%;
+        border-radius: 50%;
+    }
+    .testimonial .content .cards .card p{
+        font-size: 11px;
+    }
+
+    .contact .content .bottom{
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+    .contact .content .bottom .left{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .contact .content .bottom .left .text{
+        margin-bottom: 5px;
+    }
+    .contact .content .bottom .left h3{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .contact .content .bottom .left .social_link{
+        margin-top: 20px;
+    }
+    .contact .content .bottom .right h3{
+        text-align: center;
+        font-size: 22px;
+    }
+    .contact .content .bottom .right .sub_title{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+
+    }
+}

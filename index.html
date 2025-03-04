@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junaet-portfolio</title>
+    <!--========================================================-->
+    
+    <!--========================================================-->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <!--========================================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--========================================================-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!--========================================================-->
+    <!--========================================================-->
+
+    
+    <!--========================================================-->
+</head>
+<body id="body">
+    <Header>
+        <div class="video">
+            <video autoplay muted loop playsinline>
+                <source src="img/hero.mp4" type="video/mp4">
+              </video>
+              <div class="overlay"></div>
+        </div>
+        <div class="overlay"></div>
+        <div class="navber">
+            
+            <div class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
+            <div class="nev_and_btns " id="nev_and_btns_come">
+                <div class="nav_list">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Project">Project</a></li>
+                        <li><a href="#Price">Price</a></li>
+                    </ul>
+                </div>
+                <div class="button_div">
+                    <a href="file/Junaet_resume_1.pdf"  target="_blank" class="nav_cv_btn btn">View CV <i class="ri-file-download-line"></i></a>
+                    <a href="#Contact" class="nav_meet_btn btn">Meet me <i class="ri-goblet-fill"></i></a>
+                    <div href="" class="theme"  ><i id="theme_icon" class="ri-moon-fill" onclick="theme_change()"></i></div>
+                </div>
+            </div>
+            <div class="menu_btn">
+                <i class="ri-menu-line" id="menu_icon" onclick="menu_cng()"></i>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="left">
+                <span class="hello">hello</span>
+                <h1>I am <span>Junaet</span>  Islam</h1>
+                <h3>Web Developer & WordPress Expert</h3>
+                <p>I am a Web Developer specializing in Front-End Development and WordPress. I create responsive, user-friendly web interfaces with modern technologies. Beyond web development, I have expertise in Machine Learning, particularly in computer vision and object detection. Passionate about innovation, I love solving problems and building cutting-edge digital experiences. 🚀</p>
+                <div class="social">
+                    <i class="ri-facebook-circle-line"></i>
+                    <i class="ri-youtube-line"></i>
+                    <i class="ri-linkedin-box-line"></i>
+                    <i class="ri-instagram-line"></i>
+                </div>
+                <div class="btn_grp">
+                    <a href="file/Junaet_resume_1.pdf" class="btn" download>DownLoad CV <i class="ri-file-download-line"></i></a>
+                    <a href="#Contact" class="btn btn_meet"> Meet Me <i class="ri-goblet-fill"></i> </a>
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="img">
+                    <img src="img/hero.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        
+    </Header>
+
+    <section class="about">
+        <div class="content">
+            <div class="left">
+                <div class="img">
+                    <img src="img/about.png" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <div class="con">
+                    <h2>About Me</h2>
+                    <p>I am a dynamic Web Developer with expertise in WordPress and Front-End Development, specializing in creating responsive, visually engaging, and user-friendly web interfaces. With hands-on experience in modern front-end technologies, I ensure seamless user experiences. Additionally, I have expertise in Machine Learning, particularly in computer vision and object detection, allowing me to integrate AI-driven solutions into web applications. Passionate about innovation and problem-solving, I continuously explore emerging technologies to deliver high-quality digital experiences.</p>
+                    <div class="social">
+                        <i class="ri-facebook-circle-line"></i>
+                        <i class="ri-youtube-line"></i>
+                        <i class="ri-linkedin-box-line"></i>
+                        <i class="ri-instagram-line"></i>
+                    </div>
+                    <a href="" class="btn">More Info</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="service" id="Services">
+        <div class="content">
+            <div class="top">
+                <h2>Services</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo natus molestias fugit sequi perferendis officiis!</p>
+            </div>
+            <div class="bottom">
+                <div class="box">
+                    <i class="ri-wordpress-fill"></i>
+                    <h3>WordPress Website</h3>
+                    <p>Custom, fully functional WordPress sites tailored to your needs.</p>
+                    <a href="" class="btn">More Info</a>
+                </div>
+                <div class="box">
+                    <i class="ri-pages-line"></i>
+                    <h3>Dynamic Website</h3>
+                    <p>Interactive, feature-rich websites with seamless functionality.</p>
+                    <a href="" class="btn">More Info</a>
+                </div>
+                <div class="box">
+                    <i class="ri-arrow-left-right-fill"></i>
+                    <h3>PSD to HTML/WordPress</h3>
+                    <p>Convert designs into pixel-perfect, responsive websites.</p>
+                    <a href="" class="btn">More Info</a>
+                </div>
+                <div class="box">
+                    <i class="ri-article-line"></i>
+                    <h3>Landing Page</h3>
+                    <p>High-converting landing pages optimized for engagement.</p>
+                    <a href="" class="btn">More Info</a>
+                </div>
+                <div class="box">
+                    <i class="ri-star-smile-line"></i>
+                    <h3>Animated Section</h3>
+                    <p>Eye-catching animations for an enhanced user experience. </p>
+                    <a href="" class="btn">More Info</a>
+                </div>
+                <div class="box">
+                    <i class="ri-computer-line"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-friendly, adaptable websites for all screen sizes.</p>
+                    <a href="" class="btn">More Info</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="offers">
+        <div class="contnt swiper ">
+            <div class="addition_wrap">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide offer_slide_1">
+                        <div class="left">
+                            <h2>WordPress</h2>
+                            <p>Get a fully functional, responsive, and SEO-friendly WordPress website at an unbeatable price. Perfect for businesses, portfolios, or personal sites, with an easy-to-manage backend.</p>
+                        </div>
+                        <div class="right">
+                            <div class="bg">
+                                <h3>Up to</h3>
+                                <h1>50% OFF</h1>
+                                <h3>3 days</h3>
+                            </div>
+                            <button>Click Here</button>
+        
+                        </div>
+                    </div>
+                    <div class="swiper-slide offer_slide_2">
+                        <div class="left">
+                            <h2>landing page</h2>
+                            <p>Boost conversions with a high-converting, speed-optimized landing page designed to capture leads and drive sales. Ideal for promotions, events, or product launches.</p>
+                        </div>
+                        <div class="right">
+                            <div class="bg">
+                                <h3>Up to</h3>
+                                <h1>50% OFF</h1>
+                                <h3>3 days</h3>
+                            </div>
+                            <button>Click Here</button>
+        
+                        </div>
+                    </div>
+                    <div class="swiper-slide offer_slide_3">
+                        <div class="left">
+                            <h2>Blog Website</h2>
+                            <p>Launch your own custom blog website with a sleek design, fast loading speed, and mobile optimization. Includes seamless social sharing and an engaging layout for your content.</p>
+                        </div>
+                        <div class="right">
+                            <div class="bg">
+                                <h3>Up to</h3>
+                                <h1>50% OFF</h1>
+                                <h3>3 days</h3>
+                            </div>
+                            <button>Click Here</button>
+        
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="skills" id="Skills">
+        <div class="content">
+            <div class="top">
+                <h2>Skills</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, officia?</p>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <div class="sub_left">
+                        <div class="progress">
+                            <span><i class="ri-html5-line"></i> HTML</span>
+                            <div class="progress_box">
+                                <div class="progress_bar" id="prog_bar_1"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span><i class="ri-css3-line"></i> CSS</span>
+                            <div class="progress_box">
+                                <div class="progress_bar" id="prog_bar_2">0%</div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span><i class="ri-bootstrap-line"></i> Bootstrap</span>
+                            <div class="progress_box">
+                                <div class="progress_bar" id="prog_bar_3">0%</div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span><i class="ri-javascript-line"></i> JavaScript</span>
+                            <div class="progress_box">
+                                <div class="progress_bar" id="prog_bar_4">0%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub_right">
+                        <div class="progress">
+                            <span><i class="ri-reactjs-line"></i> React</span>
+                            <div class="progress_box">
+                                <div class="progress_bar" id="prog_bar_5">0%</div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span><i class="ri-wordpress-fill"></i> WordPress</span>
+                            <div class="progress_box">
+                                <div class="progress_bar" id="prog_bar_6">0%</div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span><i class="ri-product-hunt-line"></i> Python</span>
+                            <div class="progress_box">
+                                <div class="progress_bar" id="prog_bar_7">0%</div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span><i class="ri-java-fill"></i> Java</span>
+                            <div class="progress_box">
+                                <div class="progress_bar" id="prog_bar_8"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="glass_box">
+                        <div class="sub_box">
+                            <div class="rotet" id="rotet_1">
+                                <div class="fix_round">
+                                    <h3 id="rotet_text_1">0</h3>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_box">
+                            <div class="rotet" id="rotet_2">
+                                <div class="fix_round">
+                                    <h3 id="rotet_text_2">0</h3>
+                                    <span>WordPress</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_box">
+                            <div class="rotet" id="rotet_3">
+                                <div class="fix_round">
+                                    <h3 id="rotet_text_3">0</h3>
+                                    <span>Machine Learning</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_box">
+                            <div class="rotet" id="rotet_4">
+                                <div class="fix_round">
+                                    <h3 id="rotet_text_4">0%</h3>
+                                    <span>Data Mining</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="project" id="Project">
+        <div class="content">
+            <div class="top">
+                <h2>Project</h2>
+            </div>
+            <div class="buttom">
+                <div class="left">
+                    <input type="text" name="" id="project_search" placeholder="Searce Project Here..." onkeyup="search_project()">
+                    <span data-filter="All">All</span>
+                    <span data-filter="HTML">HTML & CSS</span>
+                    <span data-filter="Javascript">Javascript</span>
+                    <span data-filter="React">React</span>
+                    <span data-filter="WordPress">WordPress</span>
+                    <span data-filter="Others">Others</span>
+
+                </div>
+                <div class="right">
+                    <div class="project_box all HTML">
+                        <div class="img">
+                            <img src="img/project.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Personal Websites/Portfolios</h3>
+                        </div>
+                    </div>
+                    <div class="project_box all WordPress">
+                        <div class="img">
+                            <img src="img/project.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Business Websites</h3>
+                        </div>
+                    </div>
+                    <div class="project_box all Others">
+                        <div class="img">
+                            <img src="img/project.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Smart House Project</h3>
+                        </div>
+                    </div>
+                    <div class="project_box all Others">
+                        <div class="img">
+                            <img src="img/project.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Restaurant/Cafe Websites</h3>
+                        </div>
+                    </div>
+                    <div class="project_box all React">
+                        <div class="img">
+                            <img src="img/project.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>E-Commerce Websites</h3>
+                        </div>
+                    </div>
+                    <div class="project_box all React">
+                        <div class="img">
+                            <img src="img/project.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Landing Pages</h3>
+                        </div>
+                    </div>
+                    <div class="project_box all React">
+                        <div class="img">
+                            <img src="img/project.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Restaurant/Cafe Websites</h3>
+                        </div>
+                    </div>
+                    <div class="project_box all Javascript">
+                        <div class="img">
+                            <img src="img/project.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Blog Websites</h3>
+                        </div>
+                    </div>
+                    <div class="project_box all Javascript">
+                        <div class="img">
+                            <img src="img/project.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>News Websites</h3>
+                        </div>
+                    </div>
+                    <div class="project_box all Javascript">
+                        <div class="img">
+                            <img src="img/project.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Educational Websites</h3>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price" id="Price">
+        <div class="content">
+            <div class="top">
+                <h2>Price</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo natus molestias fugit sequi perferendis officiis!</p>
+            </div>
+            <div class="bottom">
+                <div class="price_box">
+                    <div class="header_price_box">
+                        <i class="fa-regular fa-paper-plane big_icon"></i>
+                        <div class="price_info">
+                            <h3>Basic </h3>
+                            <h3><sup>$</sup>10</h3>
+                        </div>
+                    
+                    </div>
+                    <div class="price_list"><i class="ri-check-line"></i><span>Simple, responsive website</span></div>
+                    <div class="price_list"><i class="ri-check-line"></i><span> Up to 3 pages</span></div>
+                    <div class="price_list"><i class="ri-check-line"></i><span>Basic design & animations</span></div>
+                    <div class="price_list"><i class="ri-check-line"></i><span>Mobile-friendly & fast loading</span></div>
+                    <div class="price_list"><i class="ri-check-line"></i><span>Contact form integration</span></div>
+                    <a href="" class="btn">Get Start</a>
+                </div>
+                <div class="price_box">
+                    <div class="header_price_box">
+                        <i class="fa-solid fa-plane-up big_icon"></i>
+                        <div class="price_info">
+                            <h3>Silver </h3>
+                            <h3><sup>$</sup>20</h3>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="price_list"><i class="ri-check-line"></i><span>Dynamic website with advanced features</span></div>
+                    <div class="price_list"><i class="ri-check-line"></i><span>Up to 7 pages</span></div>
+                    <div class="price_list"><i class="ri-check-line"></i><span>Custom design & animations</span></div>
+                    <div class="price_list"><i class="ri-check-line"></i><span>SEO-friendly & optimized performance</span></div>
+                    <div class="price_list"><i class="ri-check-line"></i><span>Blog or portfolio integration</span></div>
+                    <a href="" class="btn">Get Start</a>
+                </div>
+                <div class="price_box">
+                    <div class="header_price_box">
+                        <i  class="ri-rocket-line big_icon"></i>
+                        <div class="price_info">
+                            <h3>Gold </h3>
+                            <h3><sup>$</sup>50</h3>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="price_list"><i class="ri-check-line"></i><span>Fully customized website</span></div>
+                    <div class="price_list"><i class="ri-check-line"></i><span>Unlimited pages</span></div>
+                    <div class="price_list"><i class="ri-check-line"></i><span>Premium animations & effects</span></div>
+                    <div class="price_list"><i class="ri-check-line"></i><span>E-commerce & payment gateway integration</span></div>
+                    <div class="price_list"><i class="ri-check-line"></i><span>API & third-party service integration</span></div>
+                    <div class="price_list"><i class="ri-check-line"></i><span> Advanced web functionalities</span></div>
+                    <a href="" class="btn">Get Start</a>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section class="gallery">
+        <div class="content">
+            <div class="display" id="full_img_box">
+                <div class="img">
+                    <img src="img/bg-s (1).jpg" alt="" id="full_img">
+                </div>
+                <div class="title" onclick="full_img_box_close()"> close</div>
+            </div>
+            <div class="top">
+                <h2>Gallery</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo natus molestias fugit sequi perferendis officiis!</p>
+            </div>
+            <div class="galery_btn">
+                <div class="btn" data-filter="all">All</div>
+                <div class="btn" data-filter="item-1">item-1</div>
+                <div class="btn" data-filter="item-2">item-2</div>
+                <div class="btn" data-filter="item-3">item-3</div>
+            </div>
+            <div class="bottom gallery_botoom">
+                    <img src="img/bg-s (1).jpg" alt="" onclick="open_img(this.src)" class="all item-1">
+                    <img src="img/bg-s (2).jpg" alt="" onclick="open_img(this.src)" class="all item-2">
+                    <img src="img/bg-s (3).jpg" alt="" onclick="open_img(this.src)" class="all item-3">
+                    <img src="img/bg-s (1).jpg" alt="" onclick="open_img(this.src)" class="all item-1">
+                    <img src="img/bg-s (2).jpg" alt="" onclick="open_img(this.src)" class="all item-2">
+                    <img src="img/bg-s (3).jpg" alt="" onclick="open_img(this.src)" class="all item-3">
+                    <img src="img/bg-s (1).jpg" alt="" onclick="open_img(this.src)" class="all item-1">
+                    <img src="img/bg-s (2).jpg" alt="" onclick="open_img(this.src)" class="all item-2">
+                    <img src="img/bg-s (3).jpg" alt="" onclick="open_img(this.src)" class="all item-3">
+                    <img src="img/bg-s (1).jpg" alt="" onclick="open_img(this.src)" class="all item-1">
+                    <img src="img/bg-s (2).jpg" alt="" onclick="open_img(this.src)" class="all item-2">
+                    <img src="img/bg-s (3).jpg" alt="" onclick="open_img(this.src)" class="all item-3">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="tabing">
+        <div class="content">
+            <div class="top">
+                <h2>Personal information</h2>
+            </div>
+            <div class="bottom">
+                <div class="tab_btn">
+                    <h3 class="active">EDUCATION</h3>
+                    <h3>CERTIFICATIONS</h3>
+                    <h3>LEADERSHIP</h3>
+                </div>
+                <div class="tab_content">
+                    <div class="active">
+                        B.Sc. in CSE (Jan, 2021 - Jan, 2025) <br> Green University of Bangladesh <br> 
+                        CGPA: 3.60 <br><br>
+                        HSC (Science) (2017 - 2019) <br> Gopaldi Nazrul Islam Babu College <br>
+                        GPA: 4.92
+                    </div>
+                    
+                    <div>
+                        <ul>
+                            <li>Vice Chancellor’s Award, Spring 2024 | Green University of Bangladesh</li>
+                            <li>Vice Chancellor’s Award, Fall 2023 | Green University of Bangladesh </li>
+                            <li>Digital Security Essentials, 2023 | National Cyber Security Agency</li>
+                            <li>WordPress Website Designer & Developer, 2021 |  Softech IT</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <li>Internship Project Leader </li>
+                        <li>Thesis Team Leader </li>
+                        <li>University All-Time Class Leader & Project Leader </li>
+                        <li>College Scout & Science Fair Leader</li>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="testimonial">
+        <div class="content">
+            <div class="hero_text">
+                <h2>Testimonial</h2>
+            </div>
+            <div class="cards swiper swiper1">
+                <div class="card-warp">
+                    <div class="swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <p>"Working with this developer was a great experience from start to finish. The landing page is visually stunning, mobile-optimized, and designed to maximize conversions. They understood my needs and delivered above expectations. I’ve already seen a noticeable increase in leads. Highly recommended!" </p>
+                            <div class="star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <div class="profile">
+                                <img src="img/profile.png" alt="">
+                                <h3>— Emily W.</h3>
+                                <span>Dhaka, Bangladesh</span>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <p>"Working with this developer was a great experience from start to finish. The landing page is visually stunning, mobile-optimized, and designed to maximize conversions. They understood my needs and delivered above expectations. I’ve already seen a noticeable increase in leads. Highly recommended!" </p>
+                            <div class="star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <div class="profile">
+                                <img src="img/profile.png" alt="">
+                                <h3>— Emily W.</h3>
+                                <span>Dhaka, Bangladesh</span>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <p>"Working with this developer was a great experience from start to finish. The landing page is visually stunning, mobile-optimized, and designed to maximize conversions. They understood my needs and delivered above expectations. I’ve already seen a noticeable increase in leads. Highly recommended!" </p>
+                            <div class="star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <div class="profile">
+                                <img src="img/profile.png" alt="">
+                                <h3>— Emily W.</h3>
+                                <span>Dhaka, Bangladesh</span>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <p>"I’m beyond happy with the website! The developer created a fast, responsive site that looks amazing on all devices. The attention to detail and custom design was exactly what I needed. I highly recommend their services to anyone looking for a professional and reliable web developer." </p>
+                            <div class="star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <div class="profile">
+                                <img src="img/profile.png" alt="">
+                                <h3>— James H.</h3>
+                                <span>Dhaka, Bangladesh</span>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <p>"I’m beyond happy with the website! The developer created a fast, responsive site that looks amazing on all devices. The attention to detail and custom design was exactly what I needed. I highly recommend their services to anyone looking for a professional and reliable web developer."</p>
+                            <div class="star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <div class="profile">
+                                <img src="img/profile.png" alt="">
+                                <h3>— Anna P.</h3>
+                                <span>Dhaka, Bangladesh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact" id="Contact">
+        <div class="content">
+            
+            <div class="bottom">
+                <div class="left">
+                    <h3>Contact Us</h3>
+                    <div class="text">
+                        <i class="ri-map-pin-line"></i>
+                        <span>Dhaka,Bangladesh</span>
+                    </div>
+                    <div class="text">
+                        <i class="ri-mail-line"></i>
+                        <span>junaetpro@gmail.com</span>
+                    </div>
+                    <div class="text">
+                        <i class="ri-phone-fill"></i>
+                        <span>+8801736224711</span>
+                    </div>
+                    <div class="text">
+                        <i class="ri-linkedin-box-line"></i></i>
+                        <span><a href="https://www.linkedin.com/in/junaetislam/" target="_blank">www.linkedin.com/in/junaetislam/</a></span>
+                    </div>
+                    <div class="social_link">
+                        <i class="ri-facebook-circle-line"></i>
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-youtube-line"></i>
+                        <i class="ri-linkedin-box-line"></i>
+                    </div>
+                </div>
+                <div class="right">
+                    <h3>Get in Touch</h3>
+                    <span class="sub_title">Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="11959232-d32e-4976-b498-211b175ae7da">
+                        <div class="name_box">
+                            <i class="ri-user-line"></i>
+                            <input type="text" name="Name" id="" placeholder="Enter Your Name">
+                        </div>
+                        <div class="mail_box">
+                            <i class="ri-mail-send-line"></i>
+                            <input type="email" name="Email" id="" placeholder="Enter Your Email">
+                        </div>
+                        <div class="dec_box">
+                            <i class="ri-text-block"></i>
+                            <textarea placeholder="Write Somthing" name="text" id=""></textarea>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer_glass">
+            <div class="col">
+                <div ><img src="img/logo.png" alt="" class="logo"></div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, veritatis id? Minima laudantium qui adipisci accusantium possimus nesciunt perspiciatis necessitatibus.</p>
+
+                <h5>Address</h5>
+                <span>Dhaka, Bangladesh</span>
+            </div>
+            <div class="col">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="">Lorem, ipsum.</a></li>
+                    <li><a href="">Accusamus, aliquid.</a></li>
+                    <li><a href="">Ipsa, culpa?</a></li>
+                    <li><a href="">Culpa, dolorem?</a></li>
+                    <li><a href="">Temporibus, laborum.</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Service</h3>
+                <ul>
+                    <li><a href="">Lorem, ipsum.</a></li>
+                    <li><a href="">Accusamus, aliquid.</a></li>
+                    <li><a href="">Ipsa, culpa?</a></li>
+                    <li><a href="">Culpa, dolorem?</a></li>
+                    <li><a href="">Temporibus, laborum.</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Conatact</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptates.</p>
+                <a class="jpro_btn" href=""> CV <i class="ri-file-download-line"></i></a>
+                <a class="jpro_btn" href="">Meet Me <i class="ri-contacts-line"></i></a>
+
+                <div class="social_link">
+                    <i class="ri-facebook-circle-line"></i>
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-youtube-line"></i>
+                    <i class="ri-linkedin-box-line"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="additional">
+        <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+
+
+    </section>
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="Script.js"></script>
+</body>
+</html>
