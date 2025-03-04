@@ -553,3 +553,53 @@
 
     }
 }
+
+/*--------------450px------------================----*/
+/*======================================================*/
+@media (max-width: 450px){
+    :root{
+        --section-padding: 30px 3%;
+
+        --section-text: 20px;
+        --sub-section-text:14px;
+
+        --paragraph-normal:12px;
+    }
+    Header .hero
+    Header .hero .left{
+        flex-basis: 70%;
+    }
+    Header .hero .left h1{
+        font-size: 30px;
+        line-height: 30px;
+        
+    }
+    Header .hero .left h1 span{
+        font-size: 30px;
+        
+    }
+    Header .hero .right{
+        flex-basis: 20%;
+    }
+    Header .hero .left h3{
+        margin: 10px;
+        line-height: 20px;
+    }
+    Header .hero .left .btn_grp .btn{
+        margin-bottom: 10px;
+    }
+    .tabing .content .bottom .tab_btn{
+        flex-wrap: wrap;
+    }
+    .gallery .galery_btn .btn{
+        font-size: 12px;
+    }
+    .tabing .content .bottom .tab_btn h3{
+        border: 1px solid var(--light-color);
+        width: 50%;
+        text-align: center;
+    }
+    .testimonial .content .cards .card p{
+        font-size: 9px;
+    }
+}
