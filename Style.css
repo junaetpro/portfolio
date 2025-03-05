@@ -785,7 +785,8 @@ Header .hero .right .img img{
     
 }
 .project .content .buttom .left span:hover{
-    background-color: var(--light_overlay);
+    background-color: var(--dark-color);
+    color: var(--light-color);
     
 }
 .project .content .buttom .right{
