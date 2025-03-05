@@ -1,4 +1,5 @@
 
+//===============nav start==============================
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".navber .nev_and_btns ul li a");
 
@@ -11,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
+//===========================manu responsive====================
 const nev_and_btns_come= document.getElementById("nev_and_btns_come")
 
 const menu_icon= document.getElementById("menu_icon")
@@ -28,14 +29,8 @@ function menu_cng(){
 }
 
 
-
-
-
-
+//========================theme change===================
 const theme_icon= document.getElementById("theme_icon")
-
-
-
 function theme_change(){
     document.body.classList.toggle("dark_theme")
     if(theme_icon.classList.contains("ri-moon-fill")){
@@ -46,7 +41,8 @@ function theme_change(){
         theme_icon.classList.add("ri-moon-fill")
     }
 }
-//=================================================================
+
+//===========================gallery======================================
 const full_img_box= document.getElementById("full_img_box")
 function open_img(img){
     
@@ -59,7 +55,7 @@ function open_img(img){
 function full_img_box_close(){
     full_img_box.style.display="none"
 }
-
+//==========================gallery btn================
 const gallery_btn= document.querySelectorAll(".galery_btn .btn")
 const gallery_botoom_img= document.querySelectorAll(".gallery_botoom img")
 gallery_btn.forEach((btn)=>{
@@ -67,6 +63,11 @@ gallery_btn.forEach((btn)=>{
         console.log(e.target)
         const gallery_filter= e.target.dataset.filter
         console.log(gallery_filter)
+
+        gallery_btn.forEach((button) => {
+            button.classList.remove("active"); // Remove active class from all buttons
+        });
+        e.target.classList.add("active");
 
         gallery_botoom_img.forEach((img)=>{
             if(gallery_filter==="all"){
@@ -82,7 +83,7 @@ gallery_btn.forEach((btn)=>{
     })
 })
 
-//====================================================================
+//================================tabing====================================
 
 
 var tab_btn= document.querySelectorAll(".tab_btn h3")
@@ -101,7 +102,7 @@ tab_btn.forEach((tab,index)=>{
         tab_content[index].classList.add("active")
     })
 })
-//=============================================================
+//============================skills=================================
 
 const rotet_1= document.getElementById("rotet_1")
 const rotet_2= document.getElementById("rotet_2")
@@ -253,6 +254,7 @@ const progress_p8= setInterval(()=>{
 }, rotet_speed)
 
 
+//=====================swiper-==================
 
 const swiper = new Swiper('.card-warp', {
     spaceBetween: 20,
@@ -277,7 +279,7 @@ const swiper = new Swiper('.card-warp', {
      
   });
 
-
+//==================swiper===================
   const swiper2 = new Swiper('.addition_wrap', {
     
     mousewheel: true,
@@ -306,7 +308,7 @@ const swiper = new Swiper('.card-warp', {
      
   });
 
-
+//========================project btn==================
   const project_btn= document.querySelectorAll(".project .buttom .left span")
   const project_box= document.querySelectorAll(".project .buttom .right .project_box")
   project_btn.forEach((btn)=>{
@@ -314,6 +316,11 @@ const swiper = new Swiper('.card-warp', {
         console.log(e.target)
         const project_filter= e.target.dataset.filter
         console.log(project_filter)
+
+        project_btn.forEach((button) => {
+            button.classList.remove("active"); // Remove active class from all buttons
+        });
+        e.target.classList.add("active");
 
         project_box.forEach((project)=>{
             if(project_filter==="All"){
@@ -328,7 +335,7 @@ const swiper = new Swiper('.card-warp', {
         })
     })
   })
-
+//===================================project search=============
 function search_project(){
     let project_src_value= document.getElementById("project_search").value.toLocaleLowerCase()
     console.log(project_src_value)
@@ -345,7 +352,7 @@ function search_project(){
 
     })
 }
-
+//===============scroll top btn==================
 window.onscroll = function () {
     let btn = document.getElementById("scrollTopBtn");
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {

@@ -765,6 +765,12 @@ Header .hero .right .img img{
     text-transform: capitalize;
     font-size: var(--paragraph-normal);
 }
+
+.project .content .buttom .left span.active{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+
+}
 .project .content .buttom .left #project_search{
     margin: 10px;
     padding: 10px;
@@ -1020,6 +1026,7 @@ Header .hero .right .img img{
     margin-top: 20px;
     
 }
+
 .gallery .galery_btn .btn{
     margin: 10px;
     padding: 5px 20px;
@@ -1029,6 +1036,11 @@ Header .hero .right .img img{
     color: var(--dark-color);
 }
 .gallery .galery_btn .btn:hover{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.gallery .galery_btn .active{
     background-color: var(--dark-color);
     color: var(--light-color);
 }
