@@ -784,11 +784,7 @@ Header .hero .right .img img{
     font-size: var(--paragraph-normal);
     
 }
-.project .content .buttom .left span:hover{
-    background-color: var(--dark-color);
-    color: var(--light-color);
-    
-}
+
 .project .content .buttom .right{
     flex-basis: 75%;
     height: 600px;
